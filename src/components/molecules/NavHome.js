@@ -18,7 +18,7 @@ function NavHome({
   const [isFocus, setFocus] = useState(null);
 
   return (
-    <>
+    <View style={{marginHorizontal: 30}}>
       <View style={stylesCust.header}>
         <View style={stylesCust.headerContent}>
           <View style={stylesCust.imageInit}>
@@ -65,7 +65,7 @@ function NavHome({
           </TouchableOpacity>
         </View>
       ) : null}
-    </>
+    </View>
   );
 }
 
@@ -109,7 +109,7 @@ const stylesCust = StyleSheet.create({
     height: 40,
     flexDirection: 'row',
     // marginHorizontal: 30,
-    marginBottom: 30,
+    // marginBottom: 30,
   },
   searchInput: borderColor => ({
     borderWidth: 1,
